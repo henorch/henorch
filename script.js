@@ -1,6 +1,5 @@
 
 
-
 const movableDiv = document.querySelector('.movable-div');
 const mobileIcon = document.querySelector('.mobileIcon');
 const mobileMenu = document.querySelector('.mobileMenu');
@@ -31,3 +30,4 @@ mobileIcon.addEventListener('click', function () {
 closeMenu.addEventListener('click', e => {
     mobileMenu.style.display = "none"
 })
+

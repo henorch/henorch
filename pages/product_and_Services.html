@@ -46,6 +46,67 @@
                 width: 100%;
             }
 
+            .product {
+                border: 1px solid #ddd;
+                background-color: azure;
+                padding: 15px;
+                width: 85vw;
+                margin: 0 auto;
+                margin-bottom: 5px;
+                min-height: 320px;
+                border-radius: 5px;
+            }
+
+        }
+
+
+        .product {
+            border: 1px solid #ddd;
+            background-color: azure;
+            padding: 15px;
+            margin: 0 auto;
+            margin-bottom: 5px;
+            min-height: 300px;
+            border-radius: 5px;
+        }
+
+
+        .product h2 {
+            margin: 0;
+        }
+
+        .product p {
+            margin: 5px 0;
+        }
+
+        .product .price {
+            font-weight: bold;
+            font-size: 120px;
+        }
+
+        .product .quantity {
+            color: #555;
+        }
+
+
+        .availableproducts {
+            padding-left: 2px;
+            width: 100%;
+            height: 400px;
+        }
+
+        .availableproducts>.productcontainer {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+
+
+        /* Optional: Ensure product name and price are styled */
+        .product h2,
+        .product p {
+            margin: 0;
+            padding: 0;
         }
     </style>
 </head>
@@ -85,6 +146,7 @@
         </Navbar>
     </header>
     <div>
+
         <div class="mainSlider2" id="content">
             <div class="mainSlider" id="mainSlider">
                 <img src="../assets/images/logo1.png"
@@ -136,7 +198,14 @@
             </div>
 
         </div>
-        <h1>Available Products</h1>
+
+        <div class="availableproducts">
+            <h4>Available Products</h4>
+            <div class="productcontainer">
+                <div id="productcard" />
+            </div>
+        </div>
+
     </div>
     <script>
         var Slider = document.getElementById('mainSlider');
@@ -148,6 +217,7 @@
 
     </script>
     <script type="module" src="pageslider.js"></script>
+    <script type="module" src="productdisplay.js"></script>
 
     <script type="module" src="../script.js"></script>
 </body>
